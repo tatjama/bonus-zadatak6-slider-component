@@ -15,25 +15,26 @@
 <body>
   <div class="hero-bcg">  
     <div class="container">
-      <header>
+      <header class="header">
         <h1>Simple, traffic-based pricing</h1>
         <p>Sign-up for our 30-day trial. No credit card required. </p>
       </header>
-      <main>
-        <header>
-          <h2>100K Pageviews</h2>
-          <input type="range" value="100000" min="0" max="1000000">
-          <h1>$<span>16.00</span><sup>/month</sup></h1>
+      <main class="main">
+        <header class="range__container">
+          <p class="range__value">100K Pageviews</p>
+          <input  class="range__slider" type="range" value="100000" min="0" max="1000000" >
+          <h1 class="range__h1">$<span>16.00</span></h1>
         </header>
-        <div>
+        <div class="toggle__container">
           <p>Monthly Billing</p>
-          <p>Yearly Billing</p>
-          <div class="toggle-slider">
-            <div class="toggle-btn"></div>
+          <div class="toggle__slider">
+            <div class="toggle__btn"></div>
           </div>
-          <span>25% discount</span>
+          <p>Yearly Billing</p>          
+          <span class="toggle__span">25% discount</span>
         </div>
-        <footer>
+        
+        <footer class="footer">
           <ul>
             <li>Unlimited websites</li>
             <li>100% data ownership</li>
@@ -43,15 +44,6 @@
         </footer>
       </main>
     </div>
-  </div>
-  
-  
-   
-
-  
-  
-  
-
-  
+  </div>  
 </body>
 </html>
