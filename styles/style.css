@@ -58,12 +58,15 @@ body, html {
     -o-transform:translate(-50%, -50%);
 }
 .header{
-    padding: 20px;
+    padding-bottom: 30px;
 }
-.header h1{
-    letter-spacing:-1px;
+.header__title{
+    font-size: 1.8em;
     color: var(--text-background);
     margin: 10px;
+}
+.header__text{
+    line-height: 1.7em;
 }
 .main{
     width: 100%;
@@ -158,7 +161,7 @@ body, html {
     background-color: var(--slider-background-transparent);
 }
 .range__h1{
-    font-size: 2.2em;
+    font-size: 2.5em;
     letter-spacing: -2px;
     color: var(--text-background);
 }
@@ -175,7 +178,7 @@ body, html {
 }
 .toggle__container{
     width: 440px;
-    font-size: 0.9em;
+    font-size: 0.85em;
     letter-spacing:-0.4px;
     display: flex;
     justify-content: space-between;
@@ -209,10 +212,16 @@ body, html {
     -o-border-radius: 50%;
 }
 .toggle__span{
-    font-size: 0.7em;
+    font-size: 0.67em;
     line-height: 2em;
+    padding: 1px 10px;
+    border-radius: 10px;
     color: var(--discount-text);
     background-color: var(--discount-background);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 footer{
     width: 100%;
@@ -226,7 +235,7 @@ footer{
 ul{
     list-style-image: url(../images/icon-check.svg);
     text-align: left;
-    font-size: 0.95em;
+    font-size: 0.85em;
 }
 li{
     padding: 3px 10px;
@@ -246,10 +255,58 @@ button:hover {
     color: var(--white);
 }
 @media screen and (max-width: 600px){
+    body{
+        font-size: 13px;
+    }
+
     .container{
-        width: 100%;
+        width: 357px;
+    }
+    
+    .header{
+        padding: 0px;
+    }
+    .header__title{
+        font-size: 1.5em;
+    }
+    .header__text{
+        padding: 0px 80px;
+        font-size: 12px;
+    }
+    .range__container{
+        justify-content: space-around;
     }
     .range__slider{
+        margin: 40px auto;
         order:unset;
+    }
+    .toggle__container{
+        width: 90%;
+        padding: 0px 10px 40px 10px ;
+    }
+    .toggle__span{
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .toggle__span--mobile{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    ul{
+        list-style-position:inside;
+        text-align: center;
+        line-height: 2em;
+    }
+    button{
+        padding: 10px 50px;
+        margin-top: 20px;
+    }
+    footer{
+        padding-top: 15px;
     }
 }
