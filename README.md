@@ -109,8 +109,9 @@ Your users should be able to:
 5. Create HTML structure
 6. Create CSS Utility
 7. Style for Desktop
-8. Create JavaScript Behavior for Pages
-9. Responsive Mobile and Tablet style
+8. Responsive Mobile
+9. Create JavaScript Behavior for Pages
+. Responsive Mobile and Tablet style
 10. Refactoring
 11. Manual Test for bugs
 14. Compare original designs with my work
