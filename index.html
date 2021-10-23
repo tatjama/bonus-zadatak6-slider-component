@@ -21,9 +21,9 @@
       </header>
       <main class="main">
         <header class="range__container">
-          <p class="range__value">100K Pageviews</p>
-          <input  class="range__slider" type="range" value="100000" min="0" max="1000000" >
-          <h1 class="range__h1">$<span>16.00</span></h1>
+          <p class="range__value"><span class="range__label">100K</span> Pageviews</p>
+          <input  class="range__slider" type="range" value="499999" min="0" max="1000000" >
+          <h1 class="range__h1">$<span class="range__price">16</span>.00</span></h1>
         </header>
         <div class="toggle__container">
           <p>Monthly Billing</p>
@@ -31,7 +31,8 @@
             <div class="toggle__btn"></div>
           </div>
           <p>Yearly Billing</p>          
-          <span class="toggle__span">25% <span class="toggle__span--mobile">discount</span></span>
+          <span class="toggle__span"><span class="toggle__span--mobile">-</span>
+          25% <span class="toggle__span--desktop">discount</span></span>
         </div>
         
         <footer class="footer">
@@ -45,5 +46,7 @@
       </main>
     </div>
   </div>  
+  <script src="./js/script.js">  
+  </script>
 </body>
 </html>

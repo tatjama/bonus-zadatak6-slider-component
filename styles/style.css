@@ -45,8 +45,8 @@ body, html {
     position: absolute;
     top: 92%;
     left: 50%;
-    margin: 0;
-    padding: 20px;;
+    margin: 20px auto;
+    padding: 20px;
     transform:translate(-50%, -50%);
     background-image: url(../images/pattern-circles.svg);
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body, html {
 .header__title{
     font-size: 1.8em;
     color: var(--text-background);
-    margin: 10px;
+    margin: 10px auto;
 }
 .header__text{
     line-height: 1.7em;
@@ -89,7 +89,7 @@ body, html {
     align-items: center;
 }
 .range__slider{
-    margin: 40px auto 10px auto;
+    margin: 45px auto 20px auto;
     order: 3;
 }
 .range__value{
@@ -99,7 +99,7 @@ body, html {
     font-weight: bold;
 }
 .range__slider {
-    background: linear-gradient(to right, var(--slider-bar) 0%, var(--slider-bar) 10%, var(--empty-slider-bar) 10%, var(--empty-slider-bar) 100%);
+    background: linear-gradient(to right, var(--slider-bar) 0%, var(--slider-bar) 50%, var(--empty-slider-bar) 50%, var(--empty-slider-bar) 100%);
     border-radius: 8px;
     height: 8px;
     width: 100%;
@@ -198,6 +198,10 @@ body, html {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
+.toggle__slider.active{
+    background-color: var(--slider-bar);
+    padding-left: 24px;
+}
 .toggle__slider:hover{
     background-color: var(--slider-background);
 }
@@ -211,6 +215,9 @@ body, html {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+ .toggle__slider.active .toggle__btn{
+
+ }
 .toggle__span{
     font-size: 0.67em;
     line-height: 2em;
@@ -265,7 +272,8 @@ button:hover {
         font-size: 13px;
     }
     .container{
-        width: 90%;
+        width: 90%;      
+        background-size: 130px 130px;
     }    
     .header{
         padding: 0px;
@@ -274,20 +282,20 @@ button:hover {
         font-size: 1.5em;
     }
     .header__text{
-        padding: 0px 70px;
-        font-size: 12px;
+        padding: 0px 67px;
+        font-size: 0.87em;
     }
     .range__container{
         padding: 30px 40px;
         justify-content: space-around;
     }
-    .range__slider{
-        margin: 40px auto 30px auto;
+    .range__slider{        
+        margin: 35px auto;
         order:unset;
     }
     .toggle__container{
         width: 90%;
-        padding: 0px 10px 40px 10px ;
+        padding: 0px 10px 30px 10px ;
     }
     .toggle__span{
         border-radius: 10px;
@@ -316,5 +324,13 @@ button:hover {
     }
     footer{
         padding-top: 15px;
+    }
+    @media screen and (max-width: 365px){
+        body{
+            font-size: 10px;
+        }
+        button{
+            padding: 10px 30px;
+        }
     }
 }
