@@ -24,41 +24,32 @@ body, html {
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: var(--text);
-    position: relative;    
+    color: var(--text);    
     background-color:var(--main-background);
     width: 100%;
     height: 100%;
 }
 .hero-bcg{
     max-width: 100%;
-    height: 55%;
-    position: relative;
+    height: 440px;
     top: 0;
-    background-image: url(../images/bg-pattern.svg);
-    background-size: cover;
+    background-image:  url(../images/bg-pattern.svg);
+    background-size:  cover;
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position:  left bottom;
 }
 .container{
     width: 550px;
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
-    transform:translate(-50%, -50%);
-    background-image: url(../images/pattern-circles.svg);
-    background-repeat: no-repeat;
-    background-position: top center;
     text-align: center;
-    -webkit-transform:translate(-50%, -50%);
-    -moz-transform:translate(-50%, -50%);
-    -ms-transform:translate(-50%, -50%);
-    -o-transform:translate(-50%, -50%);
 }
 .header{
-    padding-bottom: 30px;
+    padding: 70px 0px;
+    background-image:  url(../images/pattern-circles.svg);
+    background-size: 146px 145px;
+    background-repeat: no-repeat;
+    background-position: top 50px center;
 }
 .header__title{
     font-size: 1.8em;
@@ -70,7 +61,7 @@ body, html {
 }
 .main{
     width: 100%;
-    margin: 60px auto;
+    margin: 30px auto;
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: 10px 20px 30px var(--toggle-background-transparent);
@@ -215,9 +206,6 @@ body, html {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
- .toggle__slider.active .toggle__btn{
-
- }
 .toggle__span{
     font-size: 0.67em;
     line-height: 2em;
@@ -272,30 +260,33 @@ button:hover {
         font-size: 13px;
     }
     .container{
-        width: 90%;      
-        background-size: 130px 130px;
-    }    
-    .header{
-        padding: 0px;
+        width: 90%;     
     }
+    .header{
+        background-size: 130px 130px;
+        background-position: top 55px center;
+    }    
     .header__title{
         font-size: 1.5em;
     }
     .header__text{
-        padding: 0px 67px;
-        font-size: 0.87em;
+        padding: 0px 70px;
+        font-size: 0.9em;
+    }
+    .main{
+        margin: 0px;
     }
     .range__container{
-        padding: 30px 40px;
+        padding: 30px 40px 30px 40px;
         justify-content: space-around;
     }
     .range__slider{        
-        margin: 35px auto;
+        margin: 40px auto;
         order:unset;
     }
     .toggle__container{
         width: 90%;
-        padding: 0px 10px 30px 10px ;
+        padding: 0px 10px 40px 10px ;
     }
     .toggle__span{
         border-radius: 10px;
@@ -325,9 +316,12 @@ button:hover {
     footer{
         padding-top: 15px;
     }
-    @media screen and (max-width: 365px){
+    @media screen and (max-width: 370px){
         body{
             font-size: 10px;
+        }
+        .header__text{
+            padding: 0px 60px;
         }
         button{
             padding: 10px 30px;
