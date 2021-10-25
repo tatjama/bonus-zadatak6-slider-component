@@ -5,24 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Insert Title Here</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Price Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
+  <div class="hero-bcg">  
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Simple, traffic-based pricing</h1>
+        <p class="header__text">Sign-up for our 30-day trial. No credit card required. </p>
+      </header>
+      <main class="main">
+        <header class="range__container">
+          <p class="range__value"><span class="range__label">100K</span> Pageviews</p>
+          <input  class="range__slider" type="range" value="499999" min="0" max="1000000" >
+          <h1 class="range__h1">$<span class="range__price">16</span>.00</span></h1>
+        </header>
+        <div class="toggle__container">
+          <p>Monthly Billing</p>
+          <div class="toggle__slider">
+            <div class="toggle__btn"></div>
+          </div>
+          <p>Yearly Billing</p>          
+          <span class="toggle__span"><span class="toggle__span--mobile">-</span>
+          25% <span class="toggle__span--desktop">discount</span></span>
+        </div>
+        
+        <footer class="footer">
+          <ul>
+            <li> &nbsp;&nbsp;Unlimited websites</li>
+            <li>&nbsp;&nbsp;100% data ownership</li>
+            <li>&nbsp;&nbsp;Email reports</li>
+          </ul>
+          <button>Start my trial</button>
+        </footer>
+      </main>
+    </div>
+  </div>  
+  <script src="./js/script.js">  
+  </script>
 </body>
 </html>
